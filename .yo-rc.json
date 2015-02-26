@@ -1,0 +1,6 @@
+{
+  "generator-sp": {
+    "capprojectname": "generator-sp-playground",
+    "csspreprocessor": "sass"
+  }
+}
