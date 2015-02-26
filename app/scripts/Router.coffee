@@ -27,11 +27,15 @@ define [
 
     routes:
       "":"index"
+      "!/scroll":"scroll"
       "!/404": "error404"
       "*default":"default_router"
 
     index: middleware.wrap ->
       view = showPage Page.IndexPage
+
+    scroll: middleware.wrap ->
+      view = showPage Page.ScrollPage
 
     error404: middleware.wrap ->
       showPage Page.Error404Page
