@@ -31,6 +31,8 @@ require.config
     'bootstrap/tab':"#{VENDOR_PATH}/bootstrap-sass-official/assets/javascripts/bootstrap/tab"
     'bootstrap/tooltip':"#{VENDOR_PATH}/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip"
     'bootstrap/transition':"#{VENDOR_PATH}/bootstrap-sass-official/assets/javascripts/bootstrap/transition"
+    'baron': "#{VENDOR_PATH}/baron/baron"
+    'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroll/dist/ScrollerComponent"
   packages:[
     "view/layout"
     "view/widget"
