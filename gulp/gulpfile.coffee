@@ -25,6 +25,7 @@ gulp.task "watch",  require './tasks/watch'
 gulp.task "server", require './tasks/server'
 gulp.task "proxy", require './tasks/proxy'
 gulp.task "open", require './tasks/open'
+gulp.task "deploy", require './tasks/deploy'
 
 DEFAULT_TASK = do ->
   build = ["clean"]
