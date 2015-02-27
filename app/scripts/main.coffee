@@ -33,6 +33,7 @@ require.config
     'bootstrap/transition':"#{VENDOR_PATH}/bootstrap-sass-official/assets/javascripts/bootstrap/transition"
     'baron': "#{VENDOR_PATH}/baron/baron"
     'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroll/dist/ScrollerComponent"
+    'ListComponent': "#{VENDOR_PATH}/snp-component-list/dist/ListComponent"
   packages:[
     "view/layout"
     "view/widget"

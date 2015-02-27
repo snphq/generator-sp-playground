@@ -1,0 +1,16 @@
+//- .list_page
+
+h1 List Component
+
+
+h2 Basic example
+ul(data-view-list-1)
+  li(data-bind='text: title')
+
+h2 Custom itemView
+
+p Click on items to change them
+
+ul(data-view-list-2)
+  li(data-bind='text: title, classes:{active: active}')
+

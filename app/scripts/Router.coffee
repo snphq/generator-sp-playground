@@ -28,6 +28,7 @@ define [
     routes:
       "":"index"
       "!/scroll":"scroll"
+      "!/list":"list"
       "!/404": "error404"
       "*default":"default_router"
 
@@ -36,6 +37,9 @@ define [
 
     scroll: middleware.wrap ->
       view = showPage Page.ScrollPage
+
+    list: middleware.wrap ->
+      view = showPage Page.ListPage
 
     error404: middleware.wrap ->
       showPage Page.Error404Page
