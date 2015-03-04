@@ -71,4 +71,3 @@ module.exports = ->
     .pipe gulp.dest PROP.path.styles("dest")
     .pipe $.resource.download()
     .pipe gulp.dest PROP.path.build()
-    # .pipe $.filter ("**/*.css")
