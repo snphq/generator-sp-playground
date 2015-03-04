@@ -29,6 +29,7 @@ define [
       "":"index"
       "!/scroll":"scroll"
       "!/list":"list"
+      "!/swipe":"swipe"
       "!/404": "error404"
       "*default":"default_router"
 
@@ -40,6 +41,9 @@ define [
 
     list: middleware.wrap ->
       view = showPage Page.ListPage
+
+    swipe: middleware.wrap ->
+      view = showPage Page.SwipePage
 
     error404: middleware.wrap ->
       showPage Page.Error404Page

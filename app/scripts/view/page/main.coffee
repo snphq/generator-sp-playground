@@ -4,3 +4,4 @@ define (require, exports, module)->
   IndexPage: require './IndexPage/IndexPage'
   ListPage: require './ListPage/ListPage'
   ScrollPage: require './ScrollPage/ScrollPage'
+  SwipePage: require './SwipePage/SwipePage'
