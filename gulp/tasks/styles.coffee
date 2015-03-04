@@ -65,10 +65,10 @@ module.exports = ->
 
     .pipe $.if !PROP.isDev, $.rev.css PROP.path.styles("dest"), PROP.cdn.host
     .pipe $.concat("main.css")
+    .pipe browserSync.reload {stream: true}
     .pipe $.if !PROP.isDev, $.rev.cssrev()
     .pipe $.sourcemaps.write(".")
     .pipe gulp.dest PROP.path.styles("dest")
     .pipe $.resource.download()
     .pipe gulp.dest PROP.path.build()
-    .pipe $.filter ("*.css")
-    .pipe browserSync.reload {stream: true}
+    # .pipe $.filter ("**/*.css")

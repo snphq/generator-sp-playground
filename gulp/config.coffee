@@ -218,7 +218,6 @@ PROP = do ->
       build = PROP.path.build()
       [
         libpath.join build, "**/*.html"
-        libpath.join build, "styles", "**/*.css"
         libpath.join build, "scripts", "**/*.js"
         libpath.join PROP.path.app, "images", "**/*"
       ]
