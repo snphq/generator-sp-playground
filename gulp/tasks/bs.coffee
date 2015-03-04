@@ -7,9 +7,8 @@ baseDir.push PROP.path.app if PROP.isDev
 
 module.exports = ->
   browserSync {
-    port: 9000
+    port: PROP.server.port
     open: true
-    ghostMode: false
     server: {
       baseDir
       index: "index.html"

@@ -11,11 +11,6 @@ server = _.defaults cfg.server, {
   fallback: "index.html"
 }
 
-open = _.defaults cfg.open, {
-  host: server.host
-  port: 9001 # server.port
-  path: "/"
-}
 
 cdn = _.defaults cfg.cdn, {
   host: ""

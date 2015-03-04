@@ -22,7 +22,7 @@ gulp.task "imagemin", ['imagemin.png', 'imagemin.jpg']
 gulp.task "sprites", require './tasks/sprites'
 gulp.task "compress", require './tasks/compress'
 gulp.task "watch",  require './tasks/watch'
-gulp.task "server", require './tasks/server'
+gulp.task "proxy", require './tasks/proxy'
 gulp.task "bs", require './tasks/bs'
 gulp.task "deploy", require './tasks/deploy'
 
@@ -35,6 +35,7 @@ DEFAULT_TASK = do ->
   build.push "extras:js" unless PROP.isDev
   build.push "templates"
   build.push "bs" if PROP.isSrv
+  build.push "proxy" if PROP.isSrv
   build.push "watch" if PROP.isSrv and PROP.isDev
   build.push "compress" unless PROP.isDev
   build.push "imagemin" if PROP.isImageMin
