@@ -34,6 +34,8 @@ require.config
     'baron': "#{VENDOR_PATH}/baron/baron"
     'ScrollerComponent': "#{VENDOR_PATH}/snp-component-scroll/dist/ScrollerComponent"
     'ListComponent': "#{VENDOR_PATH}/snp-component-list/dist/ListComponent"
+    'swipeGallery': "#{VENDOR_PATH}/swipegallery/src/SwipeGallery"
+    'SwipeGalleryComponent': "#{VENDOR_PATH}/snp-component-swipegallery/dist/SwipeGalleryComponent"
   packages:[
     "view/layout"
     "view/widget"
@@ -43,6 +45,9 @@ require.config
     "packages/social"
   ]
   shim:
+    swipeGallery:
+      deps: ["jquery"]
+      exports:"SwipeGallery"
     preprocess:
       exports:"PREPROCESS"
     bootstrap:

@@ -19,7 +19,8 @@
     "simple-blocks": "~0.0.3",
     "fontawesome": "~4.2.0",
     "reset-css": "*",
-    "snp-component-scroll": "~0.0.5"
+    "snp-component-scroll": "~0.0.5",
+    "snp-component-swipegallery": "*"
   },
   "resolutions": {
     "jquery": "~1.11.1"
