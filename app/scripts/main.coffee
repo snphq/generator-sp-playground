@@ -45,9 +45,6 @@ require.config
     "packages/social"
   ]
   shim:
-    swipeGallery:
-      deps: ["jquery"]
-      exports:"SwipeGallery"
     preprocess:
       exports:"PREPROCESS"
     bootstrap:
