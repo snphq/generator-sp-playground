@@ -14,10 +14,35 @@
     padding: 10px
     cursor: pointer
   .gallery_simple
-    margin-top: 100px
     background: #049fde
   .add_element_simple
     background: #049fde
+
+  .gallery_big
+    width: 1000px
+    height: 600px
+    padding: 20px 0;
+    background: #D9B5A0
+    .swipe_item
+      width: 800px
+      &:before
+        left: 100px
+        right: 100px
+    .controls
+      margin: 40px auto
+      text-align: center
+    .control
+      width: 10px
+      height: 10px
+      margin: 0 20px
+      border-radius: 100px
+      background-color: #aaa
+      display: inline-block
+    .control.active
+      background-color: #000
+
+    h1
+      line-height: 600px
 
 
 
