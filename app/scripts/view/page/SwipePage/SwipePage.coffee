@@ -1,6 +1,11 @@
 define (require, exports, module)->
   _Page = require "../_Page"
+  Backbone = require "backbone"
+  require "epoxy"
   SwipeGalleryComponent = require "SwipeGalleryComponent"
+
+  SampleCollection = Backbone.Collection.extend
+    model: Backbone.Epoxy.Model
 
   SwipeItem = require "view/list/SwipeItem/SwipeItem"
 
@@ -27,11 +32,15 @@ define (require, exports, module)->
         el: "[data-view-simple]"
         view: SwipeGalleryComponent.extend
           itemView: SwipeItem
+        scope: -> {collection: @sampleCollection}
+
+    scope: ->
+      @sampleCollection = new SampleCollection
+      @sampleCollection.add @_sampleData()
 
     initialize: ->
       @r.LoopGallery.setOptions {loop: true, elementsOnSide: 4, positionActive: 'center'}
       @r.LoopGallery.collection.reset @_sampleData()
-      @r.SimpleGallery.collection.reset @_sampleData()
 
     _sampleData: ->
       {num: i} for i in [1..10]
