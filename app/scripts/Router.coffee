@@ -30,6 +30,7 @@ define [
       "!/scroll":"scroll"
       "!/list":"list"
       "!/swipe":"swipe"
+      "!/embededvideo":"embededVideo"
       "!/404": "error404"
       "*default":"default_router"
 
@@ -44,6 +45,9 @@ define [
 
     swipe: middleware.wrap ->
       view = showPage Page.SwipePage
+
+    embededVideo: middleware.wrap ->
+      view = showPage Page.EmbededVideoPage
 
     error404: middleware.wrap ->
       showPage Page.Error404Page

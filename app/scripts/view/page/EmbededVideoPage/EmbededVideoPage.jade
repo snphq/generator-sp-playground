@@ -1,0 +1,23 @@
+//- .embededvideo_page
+
+h1 Embeded Video Component
+
+a.back-link(href='#') Back
+
+h2 Basic example
+.embededvideo_page--single_player(data-view-video-1)
+
+h2 Model binding
+
+p Change video id in field to change video in widget
+input(data-js-code)
+button Save
+.embededvideo_page--single_player(data-view-video-2)
+
+
+h2 Collection player
+.embededvideo_page--collection_player(data-view-video-3)
+ul.embededvideo_page--playlist(data-view-playlist)
+  li(data-bind='text: title')
+
+

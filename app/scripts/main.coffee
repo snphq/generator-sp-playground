@@ -36,6 +36,7 @@ require.config
     'ListComponent': "#{VENDOR_PATH}/snp-component-list/dist/ListComponent"
     'swipeGallery': "#{VENDOR_PATH}/swipegallery/src/SwipeGallery"
     'SwipeGalleryComponent': "#{VENDOR_PATH}/snp-component-swipegallery/dist/SwipeGalleryComponent"
+    'EmbededVideoComponent': "#{VENDOR_PATH}/snp-component-video-embeded/dist/index"
   packages:[
     "view/layout"
     "view/widget"
