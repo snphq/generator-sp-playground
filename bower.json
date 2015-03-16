@@ -25,6 +25,7 @@
     "snp-component-video-embeded": "~0.0.1"
   },
   "resolutions": {
-    "jquery": "~1.11.1"
+    "jquery": "~1.11.1",
+    "swipegallery": "~0.3.0"
   }
 }
