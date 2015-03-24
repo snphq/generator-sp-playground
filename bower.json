@@ -19,9 +19,9 @@
     "simple-blocks": "~0.0.3",
     "fontawesome": "~4.2.0",
     "reset-css": "*",
-    "snp-component-scroll": "~0.0.5",
-    "snp-component-swipegallery": "~0.0.2",
-    "snp-component-list": "~0.0.5",
+    "snp-component-scroll": "~0.1.0",
+    "snp-component-swipegallery": "~0.1.0",
+    "snp-component-list": "~0.0.6",
     "snp-component-video-embeded": "~0.0.1"
   },
   "resolutions": {
